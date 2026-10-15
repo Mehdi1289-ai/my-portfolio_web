@@ -1,0 +1,703 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mehdi Ali - Software & Backend Engineer Portfolio</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+</head>
+<body class="bg-dark-950 text-gray-100 font-sans antialiased min-h-screen flex flex-col selection:bg-brand-500 selection:text-dark-950">
+
+   
+
+    <!-- CSS RADIO INPUT CONTROLLERS FOR 10 PAGES -->
+    <input type="radio" name="nav-tab" id="tab-1" class="hidden" checked>
+    <input type="radio" name="nav-tab" id="tab-2" class="hidden">
+    <input type="radio" name="nav-tab" id="tab-3" class="hidden">
+    <input type="radio" name="nav-tab" id="tab-4" class="hidden">
+    <input type="radio" name="nav-tab" id="tab-5" class="hidden">
+    <input type="radio" name="nav-tab" id="tab-6" class="hidden">
+    <input type="radio" name="nav-tab" id="tab-7" class="hidden">
+    <input type="radio" name="nav-tab" id="tab-8" class="hidden">
+    <input type="radio" name="nav-tab" id="tab-9" class="hidden">
+    <input type="radio" name="nav-tab" id="tab-10" class="hidden">
+
+    <!-- Top Glow Effect -->
+    <div class="fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-64 bg-brand-500/10 blur-[130px] pointer-events-none rounded-full z-0"></div>
+
+    <!-- HEADER & NAVIGATION -->
+    <header class="sticky top-0 z-50 glass-card border-b border-gray-800/80 bg-dark-950/90 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Brand Title -->
+                <label for="tab-1" class="flex items-center gap-3 cursor-pointer group">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-400 to-brand-700 flex items-center justify-center text-dark-950 font-mono font-bold text-lg shadow-lg group-hover:scale-105 transition-transform">
+                        &lt;/&gt;
+                    </div>
+                    <div>
+                        <div class="font-bold text-lg text-white group-hover:text-brand-400 transition-colors">Mehdi Ali</div>
+                        <div class="text-xs text-brand-400 font-mono">Backend Engineer</div>
+                    </div>
+                </label>
+
+                <!-- Contact Shortcut -->
+                <div class="flex items-center gap-3">
+                    <a href="mailto:mehdialiali17@gmail.com" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 text-xs font-mono font-semibold text-brand-400 bg-brand-500/10 hover:bg-brand-500/20 rounded-lg border border-brand-500/30 transition-all">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Get in Touch</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Horizontal Scrollable Navigation Tabs (10 Pages) -->
+            <nav class="flex items-center gap-2 overflow-x-auto pb-3 pt-1 text-xs font-medium no-scrollbar border-t border-gray-800/60">
+                <label for="tab-1" class="cursor-pointer whitespace-nowrap px-3.5 py-2 rounded-lg border border-transparent text-gray-400 hover:text-white hover:bg-dark-800 transition-all flex items-center gap-2">
+                    <i class="fa-solid fa-house"></i> 1. Home
+                </label>
+                <label for="tab-2" class="cursor-pointer whitespace-nowrap px-3.5 py-2 rounded-lg border border-transparent text-gray-400 hover:text-white hover:bg-dark-800 transition-all flex items-center gap-2">
+                    <i class="fa-solid fa-user"></i> 2. About
+                </label>
+                <label for="tab-3" class="cursor-pointer whitespace-nowrap px-3.5 py-2 rounded-lg border border-transparent text-gray-400 hover:text-white hover:bg-dark-800 transition-all flex items-center gap-2">
+                    <i class="fa-solid fa-code"></i> 3. Tech Stack
+                </label>
+                <label for="tab-4" class="cursor-pointer whitespace-nowrap px-3.5 py-2 rounded-lg border border-transparent text-gray-400 hover:text-white hover:bg-dark-800 transition-all flex items-center gap-2">
+                    <i class="fa-solid fa-briefcase"></i> 4. Experience
+                </label>
+                <label for="tab-5" class="cursor-pointer whitespace-nowrap px-3.5 py-2 rounded-lg border border-transparent text-gray-400 hover:text-white hover:bg-dark-800 transition-all flex items-center gap-2">
+                    <i class="fa-solid fa-diagram-project"></i> 5. Projects
+                </label>
+                <label for="tab-6" class="cursor-pointer whitespace-nowrap px-3.5 py-2 rounded-lg border border-transparent text-gray-400 hover:text-white hover:bg-dark-800 transition-all flex items-center gap-2">
+                    <i class="fa-solid fa-network-wired"></i> 6. Architecture
+                </label>
+                <label for="tab-7" class="cursor-pointer whitespace-nowrap px-3.5 py-2 rounded-lg border border-transparent text-gray-400 hover:text-white hover:bg-dark-800 transition-all flex items-center gap-2">
+                    <i class="fa-solid fa-code-branch"></i> 7. Workflow
+                </label>
+                <label for="tab-8" class="cursor-pointer whitespace-nowrap px-3.5 py-2 rounded-lg border border-transparent text-gray-400 hover:text-white hover:bg-dark-800 transition-all flex items-center gap-2">
+                    <i class="fa-solid fa-graduation-cap"></i> 8. Education
+                </label>
+                <label for="tab-9" class="cursor-pointer whitespace-nowrap px-3.5 py-2 rounded-lg border border-transparent text-gray-400 hover:text-white hover:bg-dark-800 transition-all flex items-center gap-2">
+                    <i class="fa-solid fa-file-pdf"></i> 9. Resume
+                </label>
+                <label for="tab-10" class="cursor-pointer whitespace-nowrap px-3.5 py-2 rounded-lg border border-transparent text-gray-400 hover:text-white hover:bg-dark-800 transition-all flex items-center gap-2">
+                    <i class="fa-solid fa-address-book"></i> 10. Contact
+                </label>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT CONTAINERS FOR 10 PAGES -->
+    <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-10 z-10">
+
+        <!-- ================= PAGE 1: HOME / OVERVIEW ================= -->
+        <section id="page-1" class="page-content space-y-12">
+            <div class="glass-card rounded-3xl p-8 sm:p-12 relative overflow-hidden glow-cyan border border-brand-500/20">
+                <div class="absolute -right-10 -bottom-10 w-96 h-96 bg-brand-500/10 rounded-full blur-3xl pointer-events-none"></div>
+                
+                <div class="max-w-3xl space-y-6 relative">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-dark-800 border border-gray-700 text-brand-400 font-mono text-xs">
+                        <i class="fa-solid fa-terminal"></i> Actively Seeking Software Engineering Roles | BS Software Engineering Student @ SMIU
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                        Building Distributed <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-emerald-400">Backend Infrastructure</span> & Scalable APIs
+                    </h1>
+
+                    <p class="text-lg text-gray-300 leading-relaxed font-normal">
+                        I am <span class="text-white font-semibold">Mehdi Ali</span>, a final year Software Engineering student at Sindh Madressatul Islam University (SMIU), Karachi. I specialize in designing scalable relational schemas, RESTful & GraphQL APIs, automated testing pipelines, and cross-platform web applications.
+                    </p>
+
+                    <div class="pt-4 flex flex-wrap gap-4 items-center">
+                        <label for="tab-5" class="cursor-pointer px-6 py-3 bg-brand-500 hover:bg-brand-600 text-dark-950 font-bold rounded-xl shadow-lg transition-all flex items-center gap-2 text-sm">
+                            <i class="fa-solid fa-layer-group"></i> Explore My Projects
+                        </label>
+                        <label for="tab-9" class="cursor-pointer px-6 py-3 bg-dark-800 hover:bg-dark-700 text-gray-200 font-semibold rounded-xl border border-gray-700 hover:border-gray-500 transition-all flex items-center gap-2 text-sm">
+                            <i class="fa-solid fa-file-lines"></i> View Resume
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="glass-card p-6 rounded-2xl border border-gray-800 hover:border-brand-500/40 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-brand-500/10 text-brand-400 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-server"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Clean API Design</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        Focused on RESTful architecture, GraphQL querying, input validation, and clear documentation standardizations.
+                    </p>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl border border-gray-800 hover:border-brand-500/40 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Relational Schemas</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        Designing optimized database indexes, complex SQL queries, and efficient data normalization patterns.
+                    </p>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl border border-gray-800 hover:border-brand-500/40 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-microchip"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">High Reliability Code</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        Dedicated to modular architecture, unit testing pipelines, version control, and query optimization.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 2: ABOUT / BACKGROUND ================= -->
+        <section id="page-2" class="page-content space-y-8">
+            <div class="border-b border-gray-800 pb-5">
+                <h2 class="text-xs uppercase tracking-widest text-brand-400 font-mono font-semibold">Page 02 // Profile</h2>
+                <h1 class="text-3xl sm:text-4xl font-extrabold text-white mt-1">Background & Technical Focus</h1>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-2 glass-card p-8 rounded-2xl border border-gray-800 space-y-6">
+                    <h3 class="text-xl font-bold text-white border-b border-gray-800 pb-3">Engineering Mindset</h3>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        I am currently a final year student at <strong class="text-white">Sindh Madressatul Islam University (SMIU)</strong> in Karachi, pursuing my Bachelor of Science in Software Engineering (2023 – 2027).
+                    </p>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        My primary technical focus centers on high-reliability backend development, automated testing pipelines, clean API design, and optimization for database queries. I enjoy taking complex user requirements and transforming them into robust, maintainable server-side solutions.
+                    </p>
+
+                    <div class="pt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="p-4 rounded-xl bg-dark-900 border border-gray-800">
+                            <div class="text-brand-400 font-mono text-sm font-bold">University</div>
+                            <div class="text-white font-medium text-sm mt-1">SMIU Karachi</div>
+                        </div>
+                        <div class="p-4 rounded-xl bg-dark-900 border border-gray-800">
+                            <div class="text-brand-400 font-mono text-sm font-bold">Degree Program</div>
+                            <div class="text-white font-medium text-sm mt-1">BS Software Engineering</div>
+                        </div>
+                        <div class="p-4 rounded-xl bg-dark-900 border border-gray-800">
+                            <div class="text-brand-400 font-mono text-sm font-bold">Timeline</div>
+                            <div class="text-white font-medium text-sm mt-1">2023 – 2027</div>
+                        </div>
+                        <div class="p-4 rounded-xl bg-dark-900 border border-gray-800">
+                            <div class="text-brand-400 font-mono text-sm font-bold">Career Goal</div>
+                            <div class="text-white font-medium text-sm mt-1">Backend Engineer</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl border border-gray-800 space-y-6">
+                    <h3 class="text-xl font-bold text-white border-b border-gray-800 pb-3">Core Pillars</h3>
+                    <ul class="space-y-4 text-sm text-gray-300">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-brand-400 mt-1"></i>
+                            <span>Clean, documented, and modular REST & GraphQL APIs.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-brand-400 mt-1"></i>
+                            <span>Relational database normalization & query performance analysis.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-brand-400 mt-1"></i>
+                            <span>Git workflow and collaboration using GitHub repositories.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-brand-400 mt-1"></i>
+                            <span>Modern cross-platform frontend basics (HTML, CSS, JavaScript).</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 3: TECH STACK / SKILLS ================= -->
+        <section id="page-3" class="page-content space-y-8">
+            <div class="border-b border-gray-800 pb-5">
+                <h2 class="text-xs uppercase tracking-widest text-brand-400 font-mono font-semibold">Page 03 // Competencies</h2>
+                <h1 class="text-3xl sm:text-4xl font-extrabold text-white mt-1">Technical Stack & Toolkit</h1>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="glass-card p-6 rounded-2xl border border-gray-800 space-y-4">
+                    <div class="flex items-center gap-3 border-b border-gray-800 pb-3">
+                        <i class="fa-solid fa-server text-brand-400 text-xl"></i>
+                        <h3 class="font-bold text-white">Backend Technologies</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2 font-mono text-xs">
+                        <span class="px-3 py-1.5 rounded-lg bg-dark-900 border border-gray-700 text-gray-200">Python</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-dark-900 border border-gray-700 text-gray-200">FastAPI</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-dark-900 border border-gray-700 text-gray-200">Flask</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-dark-900 border border-gray-700 text-gray-200">RESTful APIs</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-dark-900 border border-gray-700 text-gray-200">GraphQL</span>
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl border border-gray-800 space-y-4">
+                    <div class="flex items-center gap-3 border-b border-gray-800 pb-3">
+                        <i class="fa-solid fa-code text-emerald-400 text-xl"></i>
+                        <h3 class="font-bold text-white">Frontend Fundamentals</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2 font-mono text-xs">
+                        <span class="px-3 py-1.5 rounded-lg bg-dark-900 border border-gray-700 text-gray-200">JavaScript</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-dark-900 border border-gray-700 text-gray-200">HTML5</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-dark-900 border border-gray-700 text-gray-200">CSS3</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-dark-900 border border-gray-700 text-gray-200">Tailwind CSS</span>
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl border border-gray-800 space-y-4">
+                    <div class="flex items-center gap-3 border-b border-gray-800 pb-3">
+                        <i class="fa-solid fa-database text-purple-400 text-xl"></i>
+                        <h3 class="font-bold text-white">Database & Querying</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2 font-mono text-xs">
+                        <span class="px-3 py-1.5 rounded-lg bg-dark-900 border border-gray-700 text-gray-200">PostgreSQL</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-dark-900 border border-gray-700 text-gray-200">MySQL / SQL</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-dark-900 border border-gray-700 text-gray-200">Query Optimization</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-dark-900 border border-gray-700 text-gray-200">Relational Schemas</span>
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl border border-gray-800 space-y-4">
+                    <div class="flex items-center gap-3 border-b border-gray-800 pb-3">
+                        <i class="fa-solid fa-toolbox text-amber-400 text-xl"></i>
+                        <h3 class="font-bold text-white">Dev Tools & Workflow</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2 font-mono text-xs">
+                        <span class="px-3 py-1.5 rounded-lg bg-dark-900 border border-gray-700 text-gray-200">Git</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-dark-900 border border-gray-700 text-gray-200">GitHub</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-dark-900 border border-gray-700 text-gray-200">Postman / Insomnia</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-dark-900 border border-gray-700 text-gray-200">VS Code</span>
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl border border-gray-800 space-y-4">
+                    <div class="flex items-center gap-3 border-b border-gray-800 pb-3">
+                        <i class="fa-solid fa-sitemap text-sky-400 text-xl"></i>
+                        <h3 class="font-bold text-white">Concepts & Practices</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2 font-mono text-xs">
+                        <span class="px-3 py-1.5 rounded-lg bg-dark-900 border border-gray-700 text-gray-200">Automated Testing</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-dark-900 border border-gray-700 text-gray-200">CRUD Systems</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-dark-900 border border-gray-700 text-gray-200">Microservices Principles</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-dark-900 border border-gray-700 text-gray-200">Schema Normalization</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 4: EXPERIENCE / QUALIFICATIONS ================= -->
+        <section id="page-4" class="page-content space-y-8">
+            <div class="border-b border-gray-800 pb-5">
+                <h2 class="text-xs uppercase tracking-widest text-brand-400 font-mono font-semibold">Page 04 // Career Status</h2>
+                <h1 class="text-3xl sm:text-4xl font-extrabold text-white mt-1">Qualifications & Experience</h1>
+            </div>
+
+            <div class="glass-card p-8 rounded-2xl border border-gray-800 space-y-6">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-gray-800 pb-6">
+                    <div>
+                        <span class="text-xs font-mono text-brand-400 uppercase tracking-wide">Career Entry Level</span>
+                        <h2 class="text-2xl font-bold text-white mt-1">Fresh Graduate / Final Year Student</h2>
+                        <p class="text-sm text-gray-400 mt-1">Seeking Entry-Level Backend Engineer or Software Developer Opportunities</p>
+                    </div>
+                    <span class="px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-mono text-xs self-start sm:self-auto">
+                        Ready for Immediate Roles
+                    </span>
+                </div>
+
+                <div class="space-y-4">
+                    <h3 class="text-lg font-bold text-white">Core Capabilities Learned & Applied:</h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-300">
+                        <div class="p-4 rounded-xl bg-dark-900 border border-gray-800 flex items-start gap-3">
+                            <i class="fa-solid fa-check text-brand-400 mt-1"></i>
+                            <div>
+                                <strong class="text-white block mb-1">RESTful & GraphQL API Construction</strong>
+                                Hands-on practical development of backend services, request payload validation, and clean endpoint responses.
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-dark-900 border border-gray-800 flex items-start gap-3">
+                            <i class="fa-solid fa-check text-brand-400 mt-1"></i>
+                            <div>
+                                <strong class="text-white block mb-1">Database Management & Querying</strong>
+                                Writing complex SQL joins, index optimizations, entity relationship models, and transaction handling.
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-dark-900 border border-gray-800 flex items-start gap-3">
+                            <i class="fa-solid fa-check text-brand-400 mt-1"></i>
+                            <div>
+                                <strong class="text-white block mb-1">Collaborative Development</strong>
+                                Version controlling codebases with Git branching strategies and GitHub repository management.
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-dark-900 border border-gray-800 flex items-start gap-3">
+                            <i class="fa-solid fa-check text-brand-400 mt-1"></i>
+                            <div>
+                                <strong class="text-white block mb-1">Web Application Integration</strong>
+                                Integrating server-side backend logics with modern frontend structures using HTML, CSS, and JavaScript.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 5: PROJECTS HUB ================= -->
+        <section id="page-5" class="page-content space-y-8">
+            <div class="border-b border-gray-800 pb-5">
+                <h2 class="text-xs uppercase tracking-widest text-brand-400 font-mono font-semibold">Page 05 // Portfolio</h2>
+                <h1 class="text-3xl sm:text-4xl font-extrabold text-white mt-1">Featured Backend Projects</h1>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="glass-card rounded-2xl border border-gray-800 p-6 flex flex-col justify-between hover:border-brand-500/50 transition-all">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-mono text-brand-400 bg-brand-500/10 px-2.5 py-1 rounded">Backend API</span>
+                            <a href="https://github.com/Mehdi1289-ai" target="_blank" class="text-gray-400 hover:text-white"><i class="fa-brands fa-github text-lg"></i></a>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Distributed RESTful Service Engine</h3>
+                        <p class="text-sm text-gray-400 leading-relaxed">
+                            A high-performance Python FastAPI service with automatic documentation, modular routing structures, and PostgreSQL data persistence.
+                        </p>
+                        <div class="flex flex-wrap gap-2 font-mono text-xs pt-2">
+                            <span class="px-2 py-1 rounded bg-dark-900 text-gray-300">FastAPI</span>
+                            <span class="px-2 py-1 rounded bg-dark-900 text-gray-300">PostgreSQL</span>
+                            <span class="px-2 py-1 rounded bg-dark-900 text-gray-300">REST API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl border border-gray-800 p-6 flex flex-col justify-between hover:border-brand-500/50 transition-all">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-mono text-brand-400 bg-brand-500/10 px-2.5 py-1 rounded">GraphQL Service</span>
+                            <a href="https://github.com/Mehdi1289-ai" target="_blank" class="text-gray-400 hover:text-white"><i class="fa-brands fa-github text-lg"></i></a>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">GraphQL Query & Mutation Server</h3>
+                        <p class="text-sm text-gray-400 leading-relaxed">
+                            Flexible query endpoint implementation allowing client-tailored data fetching, reducing payload overhead compared to traditional endpoints.
+                        </p>
+                        <div class="flex flex-wrap gap-2 font-mono text-xs pt-2">
+                            <span class="px-2 py-1 rounded bg-dark-900 text-gray-300">GraphQL</span>
+                            <span class="px-2 py-1 rounded bg-dark-900 text-gray-300">Python</span>
+                            <span class="px-2 py-1 rounded bg-dark-900 text-gray-300">SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl border border-gray-800 p-6 flex flex-col justify-between hover:border-brand-500/50 transition-all">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-mono text-brand-400 bg-brand-500/10 px-2.5 py-1 rounded">Full Stack App</span>
+                            <a href="https://github.com/Mehdi1289-ai" target="_blank" class="text-gray-400 hover:text-white"><i class="fa-brands fa-github text-lg"></i></a>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Interactive Web Data Hub</h3>
+                        <p class="text-sm text-gray-400 leading-relaxed">
+                            Cross-platform responsive dashboard built using HTML, CSS, and JavaScript connected to a Flask backend query optimization pipeline.
+                        </p>
+                        <div class="flex flex-wrap gap-2 font-mono text-xs pt-2">
+                            <span class="px-2 py-1 rounded bg-dark-900 text-gray-300">JavaScript</span>
+                            <span class="px-2 py-1 rounded bg-dark-900 text-gray-300">HTML/CSS</span>
+                            <span class="px-2 py-1 rounded bg-dark-900 text-gray-300">Flask</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl border border-gray-800 p-6 flex flex-col justify-between hover:border-brand-500/50 transition-all">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-mono text-brand-400 bg-brand-500/10 px-2.5 py-1 rounded">Database Design</span>
+                            <a href="https://github.com/Mehdi1289-ai" target="_blank" class="text-gray-400 hover:text-white"><i class="fa-brands fa-github text-lg"></i></a>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Relational Database Schemas & Benchmarking</h3>
+                        <p class="text-sm text-gray-400 leading-relaxed">
+                            Database optimization benchmark suite evaluating indexing strategies, query execution plans, and data normalization across MySQL tables.
+                        </p>
+                        <div class="flex flex-wrap gap-2 font-mono text-xs pt-2">
+                            <span class="px-2 py-1 rounded bg-dark-900 text-gray-300">MySQL</span>
+                            <span class="px-2 py-1 rounded bg-dark-900 text-gray-300">Indexing</span>
+                            <span class="px-2 py-1 rounded bg-dark-900 text-gray-300">SQL Optimization</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 6: ARCHITECTURE & SYSTEM DESIGN ================= -->
+        <section id="page-6" class="page-content space-y-8">
+            <div class="border-b border-gray-800 pb-5">
+                <h2 class="text-xs uppercase tracking-widest text-brand-400 font-mono font-semibold">Page 06 // Engineering Principles</h2>
+                <h1 class="text-3xl sm:text-4xl font-extrabold text-white mt-1">Architecture & System Design</h1>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="glass-card p-6 rounded-2xl border border-gray-800 space-y-4">
+                    <h3 class="text-xl font-bold text-white flex items-center gap-2">
+                        <i class="fa-solid fa-sitemap text-brand-400"></i> API & Microservices Strategy
+                    </h3>
+                    <p class="text-sm text-gray-300 leading-relaxed">
+                        I focus on crafting decoupled API endpoints. By separating data layer concerns from routing logic, backend systems become easy to maintain, scale, and test independently.
+                    </p>
+                    <ul class="space-y-2 text-xs font-mono text-gray-400">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-chevron-right text-brand-400"></i> Clear REST resource endpoints & HTTP status codes</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-chevron-right text-brand-400"></i> GraphQL schema definition & query resolvers</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-chevron-right text-brand-400"></i> Payload validation & robust exception handling</li>
+                    </ul>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl border border-gray-800 space-y-4">
+                    <h3 class="text-xl font-bold text-white flex items-center gap-2">
+                        <i class="fa-solid fa-database text-emerald-400"></i> Schema Normalization & Indexing
+                    </h3>
+                    <p class="text-sm text-gray-300 leading-relaxed">
+                        Database performance relies heavily on proper schema design. I apply normalized relational database models alongside targeted indexing to minimize execution latency.
+                    </p>
+                    <ul class="space-y-2 text-xs font-mono text-gray-400">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-chevron-right text-emerald-400"></i> Execution plan analysis (`EXPLAIN ANALYZE`)</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-chevron-right text-emerald-400"></i> Foreign key constraints & transactional integrity</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-chevron-right text-emerald-400"></i> Query response caching strategies</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 7: DEVELOPMENT PROCESS & WORKFLOW ================= -->
+        <section id="page-7" class="page-content space-y-8">
+            <div class="border-b border-gray-800 pb-5">
+                <h2 class="text-xs uppercase tracking-widest text-brand-400 font-mono font-semibold">Page 07 // Methodology</h2>
+                <h1 class="text-3xl sm:text-4xl font-extrabold text-white mt-1">Development Workflow & Tools</h1>
+            </div>
+
+            <div class="glass-card p-8 rounded-2xl border border-gray-800 space-y-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="space-y-3">
+                        <div class="w-10 h-10 rounded-lg bg-brand-500/10 text-brand-400 flex items-center justify-center font-bold font-mono">01</div>
+                        <h3 class="text-lg font-bold text-white">Version Control & Git</h3>
+                        <p class="text-xs text-gray-400 leading-relaxed">
+                            Structured Git commit histories, branch workflows (feature branches, bugfixes), and GitHub pull request reviews.
+                        </p>
+                    </div>
+
+                    <div class="space-y-3">
+                        <div class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center font-bold font-mono">02</div>
+                        <h3 class="text-lg font-bold text-white">Automated Testing</h3>
+                        <p class="text-xs text-gray-400 leading-relaxed">
+                            Writing unit tests for key backend utility functions and integration tests for essential API endpoints.
+                        </p>
+                    </div>
+
+                    <div class="space-y-3">
+                        <div class="w-10 h-10 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center font-bold font-mono">03</div>
+                        <h3 class="text-lg font-bold text-white">Clean Code Standards</h3>
+                        <p class="text-xs text-gray-400 leading-relaxed">
+                            Adhering to code linting guidelines, modular file organization, and comprehensive inline code comments.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 8: EDUCATION & ACADEMIC JOURNEY ================= -->
+        <section id="page-8" class="page-content space-y-8">
+            <div class="border-b border-gray-800 pb-5">
+                <h2 class="text-xs uppercase tracking-widest text-brand-400 font-mono font-semibold">Page 08 // Academics</h2>
+                <h1 class="text-3xl sm:text-4xl font-extrabold text-white mt-1">Education & Qualifications</h1>
+            </div>
+
+            <div class="glass-card p-8 rounded-2xl border border-gray-800 space-y-6">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-gray-800 pb-6">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-brand-500/10 text-brand-400 text-xs font-mono mb-2">
+                            Degree Program
+                        </div>
+                        <h2 class="text-2xl font-bold text-white">Bachelor of Science in Software Engineering (BS SE)</h2>
+                        <p class="text-gray-300 text-sm mt-1">Sindh Madressatul Islam University (SMIU), Karachi</p>
+                    </div>
+                    <div class="text-right font-mono text-sm text-gray-400">
+                        <span class="block text-white font-bold">2023 – 2027</span>
+                        <span>Final Year Student</span>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <h3 class="text-base font-bold text-white">Relevant Academic Coursework:</h3>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 font-mono text-xs">
+                        <div class="p-3 rounded-lg bg-dark-900 border border-gray-800 text-gray-300">Database Management Systems</div>
+                        <div class="p-3 rounded-lg bg-dark-900 border border-gray-800 text-gray-300">Software Architecture & Design</div>
+                        <div class="p-3 rounded-lg bg-dark-900 border border-gray-800 text-gray-300">Data Structures & Algorithms</div>
+                        <div class="p-3 rounded-lg bg-dark-900 border border-gray-800 text-gray-300">Web Engineering</div>
+                        <div class="p-3 rounded-lg bg-dark-900 border border-gray-800 text-gray-300">Object-Oriented Programming</div>
+                        <div class="p-3 rounded-lg bg-dark-900 border border-gray-800 text-gray-300">Software Quality Assurance</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 9: RESUME DOWNLOAD / SUMMARY ================= -->
+        <section id="page-9" class="page-content space-y-8">
+            <div class="border-b border-gray-800 pb-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <div>
+                    <h2 class="text-xs uppercase tracking-widest text-brand-400 font-mono font-semibold">Page 09 // Curriculum Vitae</h2>
+                    <h1 class="text-3xl sm:text-4xl font-extrabold text-white mt-1">Resume Overview</h1>
+                </div>
+                <a href="mailto:mehdialiali17@gmail.com" class="px-4 py-2 bg-brand-500 hover:bg-brand-600 text-dark-950 font-bold text-xs rounded-lg transition-colors flex items-center gap-2 self-start sm:self-auto">
+                    <i class="fa-solid fa-paper-plane"></i> Request Full PDF Resume
+                </a>
+            </div>
+
+            <div class="glass-card p-8 sm:p-12 rounded-2xl border border-gray-800 space-y-8 max-w-4xl mx-auto">
+                <div class="border-b border-gray-800 pb-6 text-center sm:text-left flex flex-col sm:flex-row justify-between items-center gap-4">
+                    <div>
+                        <h2 class="text-3xl font-extrabold text-white">MEHDI ALI</h2>
+                        <p class="text-brand-400 font-mono text-sm mt-1">Software & Backend Engineer</p>
+                    </div>
+                    <div class="text-xs font-mono text-gray-400 space-y-1 text-center sm:text-right">
+                        <div>mehdialiali17@gmail.com</div>
+                        <div>SMIU Dept of Software Engineering</div>
+                        <div>Karachi, Pakistan</div>
+                    </div>
+                </div>
+
+                <div class="space-y-2">
+                    <h3 class="text-sm font-mono uppercase tracking-wider text-brand-400 font-bold">Executive Summary</h3>
+                    <p class="text-xs text-gray-300 leading-relaxed">
+                        Final year Software Engineering student at SMIU with backend development skills in API design (RESTful & GraphQL), database schema normalization, query optimization, JavaScript, HTML, CSS, Git, and GitHub. Highly motivated to contribute to distributed software infrastructure and scalable backend services.
+                    </p>
+                </div>
+
+                <div class="space-y-2">
+                    <h3 class="text-sm font-mono uppercase tracking-wider text-brand-400 font-bold">Education</h3>
+                    <div class="flex justify-between items-start text-xs">
+                        <div>
+                            <strong class="text-white block">BS Software Engineering</strong>
+                            <span class="text-gray-400">Sindh Madressatul Islam University (SMIU), Karachi</span>
+                        </div>
+                        <span class="text-gray-400 font-mono">2023 – 2027</span>
+                    </div>
+                </div>
+
+                <div class="space-y-2">
+                    <h3 class="text-sm font-mono uppercase tracking-wider text-brand-400 font-bold">Key Technical Skills</h3>
+                    <div class="text-xs text-gray-300 space-y-1">
+                        <div><strong class="text-white">Languages & Frameworks:</strong> Python, FastAPI, Flask, JavaScript, HTML, CSS</div>
+                        <div><strong class="text-white">APIs & Architecture:</strong> REST API, GraphQL, Microservices Principles</div>
+                        <div><strong class="text-white">Databases:</strong> PostgreSQL, MySQL, SQL Query Optimization, Relational Schemas</div>
+                        <div><strong class="text-white">Tools & Version Control:</strong> Git, GitHub, Postman, VS Code</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 10: CONTACT & SOCIALS ================= -->
+        <section id="page-10" class="page-content space-y-8">
+            <div class="border-b border-gray-800 pb-5">
+                <h2 class="text-xs uppercase tracking-widest text-brand-400 font-mono font-semibold">Page 10 // Connect</h2>
+                <h1 class="text-3xl sm:text-4xl font-extrabold text-white mt-1">Get in Touch</h1>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="glass-card p-8 rounded-2xl border border-gray-800 space-y-6">
+                    <h3 class="text-xl font-bold text-white">Contact Information</h3>
+                    <p class="text-sm text-gray-300 leading-relaxed">
+                        I am actively seeking backend engineering roles, internships, and collaborative software projects. Feel free to reach out directly via email or social links.
+                    </p>
+
+                    <div class="space-y-4 text-sm font-mono">
+                        <a href="mailto:mehdialiali17@gmail.com" class="flex items-center gap-4 p-4 rounded-xl bg-dark-900 border border-gray-800 hover:border-brand-500/50 transition-colors text-gray-200 hover:text-white">
+                            <i class="fa-solid fa-envelope text-brand-400 text-lg"></i>
+                            <div>
+                                <div class="text-xs text-gray-500">Direct Email</div>
+                                <div>mehdialiali17@gmail.com</div>
+                            </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/mehdi-ali-9503b72a1/" target="_blank" class="flex items-center gap-4 p-4 rounded-xl bg-dark-900 border border-gray-800 hover:border-brand-500/50 transition-colors text-gray-200 hover:text-white">
+                            <i class="fa-brands fa-linkedin text-brand-400 text-lg"></i>
+                            <div>
+                                <div class="text-xs text-gray-500">LinkedIn Profile</div>
+                                <div>mehdi-ali-9503b72a1</div>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/Mehdi1289-ai" target="_blank" class="flex items-center gap-4 p-4 rounded-xl bg-dark-900 border border-gray-800 hover:border-brand-500/50 transition-colors text-gray-200 hover:text-white">
+                            <i class="fa-brands fa-github text-brand-400 text-lg"></i>
+                            <div>
+                                <div class="text-xs text-gray-500">GitHub Repositories</div>
+                                <div>Mehdi1289-ai</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl border border-gray-800 space-y-6">
+                    <h3 class="text-xl font-bold text-white">Send a Direct Message</h3>
+                    
+                    <form action="mailto:mehdialiali17@gmail.com" method="post" enctype="text/plain" class="space-y-4 text-xs font-mono">
+                        <div>
+                            <label class="block text-gray-400 mb-1">Your Name</label>
+                            <input type="text" required class="w-full px-4 py-3 rounded-lg bg-dark-900 border border-gray-800 text-white focus:outline-none focus:border-brand-400">
+                        </div>
+
+                        <div>
+                            <label class="block text-gray-400 mb-1">Your Email</label>
+                            <input type="email" required class="w-full px-4 py-3 rounded-lg bg-dark-900 border border-gray-800 text-white focus:outline-none focus:border-brand-400">
+                        </div>
+
+                        <div>
+                            <label class="block text-gray-400 mb-1">Message</label>
+                            <textarea rows="4" required class="w-full px-4 py-3 rounded-lg bg-dark-900 border border-gray-800 text-white focus:outline-none focus:border-brand-400"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-3.5 bg-brand-500 hover:bg-brand-600 text-dark-950 font-bold rounded-lg transition-colors flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark-950 border-t border-gray-800/80 py-8 text-xs text-gray-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="font-mono">
+                &copy; 2026 Mehdi Ali — BS Software Engineering Student @ SMIU
+            </div>
+            <div class="flex items-center gap-4 text-sm">
+                <a href="https://github.com/Mehdi1289-ai" target="_blank" class="hover:text-white transition-colors"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/mehdi-ali-9503b72a1/" target="_blank" class="hover:text-white transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:mehdialiali17@gmail.com" class="hover:text-white transition-colors"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+</html>
